@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>El Ojo de Shannkz</title>
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -33,12 +34,11 @@
         <div class="descarga-item">
             <h3>Tomo 1</h3>
             <div class="botones">
-            <div id="visor-pdf"></div>
-                <a href="tomo1.pdf" class="boton leer-online" onclick="mostrarPDF('KusoMagi TOMO 1.pdf'); return false;">Leer online</a>
-
-                 <a href="tomo1.pdf" download class="boton descargar">Descargar</a>
+                <a href="#" class="boton leer-online" onclick="mostrarPDF('descargas/tomo1.pdf'); return false;">Leer online</a>
+                <a href="descargas/tomo1.pdf" download class="boton descargar">Descargar</a>
             </div>
         </div>
+        <div id="visor-pdf"></div>
     </section>
 
     <section class="social">
@@ -62,6 +62,5 @@
         <p>&copy; 2025 El Ojo de Shannkz. Todos los derechos reservados.</p>
     </footer>
 
-    <script src="script.js"></script> <!-- Referencia al archivo JavaScript -->
 </body>
 </html>
