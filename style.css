@@ -108,3 +108,24 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+/* Sección de la radio */
+.radio {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.radio h3 {
+    color: #333;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.radio-player iframe {
+    border-radius: 8px;
+}
+
+/* Botón de descargas */
