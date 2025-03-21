@@ -8,7 +8,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const url = "https://shannkz04.github.io/el-ojo-de-shannkz";
     const image = "https://shannkz04.github.io/el-ojo-de-shannkz/prueba.png"; // Imagen para compartir
 
+    // Cerrar el menú si se hace clic fuera de él
+    document.addEventListener("click", function(event) {
+        if (!shareButton.contains(event.target) && !shareMenu.contains(event.target)) {
+            shareMenu.style.display = "none"; // Cierra el menú si se hace clic fuera de él
     // Alternar visibilidad del menú de compartir
+            
     shareButton.addEventListener("click", function(event) {
         // Prevenir que el clic en el botón de compartir cierre el menú inmediatamente
         event.stopPropagation();
@@ -39,10 +44,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Cerrar el menú si se hace clic fuera de él
-    document.addEventListener("click", function(event) {
-        if (!shareButton.contains(event.target) && !shareMenu.contains(event.target)) {
-            shareMenu.style.display = "none"; // Cierra el menú si se hace clic fuera de él
+    
         }
     });
 });
