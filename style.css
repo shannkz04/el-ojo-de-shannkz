@@ -163,21 +163,6 @@ footer {
     opacity: 0.8;
 }
 
-#share-button {
-    text-decoration: none;
-    color: white;
-    background-color: #0077B5; /* Color para el botón */
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    display: inline-block;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
-#share-button:hover {
-    opacity: 0.8;
-}
 
 
 @keyframes fadeIn {
