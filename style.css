@@ -36,10 +36,12 @@ nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
+    position: relative;
 }
 
 nav ul li {
     margin: 0 15px;
+    position: relative;
 }
 
 nav ul li a {
@@ -60,7 +62,7 @@ nav ul li a:hover {
 }
 
 h2, h3 {
-    text-align: center; /* Centra los títulos */
+    text-align: center;
 }
 
 .social {
@@ -163,13 +165,13 @@ footer {
     opacity: 0.8;
 }
 
-
-
+/* Animaciones */
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
 }
 
+/* Diseño responsivo */
 @media (max-width: 768px) {
     .banner h1 {
         font-size: 1.5em;
@@ -203,11 +205,12 @@ footer {
         padding: 10px;
     }
 }
-.hidden {
-    display: none;
-}
 
+/* --- MENÚ COMPARTIR (MEJORADO) --- */
+
+/* Ocultar el menú de compartir por defecto */
 #share-menu {
+    display: none;
     position: absolute;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -221,6 +224,12 @@ footer {
     z-index: 1000;
 }
 
+/* Mostrar el menú cuando tiene la clase 'active' */
+#share-menu.active {
+    display: block;
+}
+
+/* Estilos para los elementos del menú */
 #share-menu li {
     padding: 10px;
     text-align: center;
