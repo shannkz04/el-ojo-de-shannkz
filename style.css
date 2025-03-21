@@ -122,6 +122,11 @@ section h2 {
     background: #218838;
 }
 
+#messageRegister {
+    margin-top: 10px;
+    color: #e3aebf;
+}
+
 .social-icons {
     margin-top: 20px;
 }
@@ -145,4 +150,9 @@ footer {
     color: #fff;
     padding: 20px 0;
     margin-top: 20px;
+}
+
+#chatAlert {
+    color: #e74c3c;
+    font-weight: bold;
 }
