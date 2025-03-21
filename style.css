@@ -108,24 +108,59 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
-/* Sección de la radio */
-.radio {
-    text-align: center;
+/* Sección de Descargas */
+.descargas {
     padding: 40px 20px;
     background-color: #fff;
     margin-top: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-.radio h3 {
+.descargas h2 {
     color: #333;
-    font-size: 1.8em;
-    margin-bottom: 15px;
+    font-size: 2em;
+    margin-bottom: 20px;
 }
 
-.radio-player iframe {
-    border-radius: 8px;
+.descarga-item {
+    margin-bottom: 30px;
+}
+
+.descarga-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.leer-online {
+    background-color: #007bff;
+    color: white;
+}
+
+.descargar {
+    background-color: #28a745;
+    color: white;
+}
+
+.boton:hover {
+    opacity: 0.8;
 }
 
 
