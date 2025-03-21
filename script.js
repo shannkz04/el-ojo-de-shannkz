@@ -10,14 +10,15 @@ document.getElementById('share-button').addEventListener('click', function(e) {
 
     // Redes sociales a compartir
     const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`; // Facebook
-
     const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`; // Twitter
-
     const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(url)}`; // WhatsApp
 
-    // Abrir ventana para compartir en cada red social
-    const shareWindow = window.open(shareUrl, 'facebook-share', 'width=600,height=400');
-    if (!shareWindow) {
-        alert('No se pudo abrir la ventana de compartir. Por favor, asegúrate de que tu navegador permita ventanas emergentes.');
-    }
+    // Abre una nueva ventana para Facebook
+    window.open(shareUrl, 'facebook-share', 'width=600,height=400');
+
+    // Abre una nueva ventana para Twitter
+    window.open(twitterUrl, 'twitter-share', 'width=600,height=400');
+
+    // Abre una nueva ventana para WhatsApp
+    window.open(whatsappUrl, 'whatsapp-share', 'width=600,height=400');
 });
