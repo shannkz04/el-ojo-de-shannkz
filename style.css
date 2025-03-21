@@ -55,7 +55,7 @@ nav ul li a:hover {
     background: #444;
 }
 
-/* Estilos del menú desplegable */
+/* Estilo para el menú desplegable */
 nav ul li.dropdown ul {
     display: none;
     position: absolute;
@@ -95,7 +95,7 @@ nav ul li.dropdown ul li a:hover {
 }
 
 h2, h3 {
-    text-align: center; /* Centra los títulos */
+    text-align: center;
 }
 
 .social {
