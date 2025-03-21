@@ -59,6 +59,10 @@ nav ul li a:hover {
     padding: 40px 20px;
 }
 
+h2, h3 {
+    text-align: center; /* Centra los títulos */
+}
+
 .social {
     text-align: center;
     padding: 20px;
@@ -148,11 +152,6 @@ footer {
     font-weight: bold;
     transition: 0.3s;
     display: inline-block;
-}
-
-.leer-online {
-    background-color: #007bff;
-    color: white;
 }
 
 .descargar {
