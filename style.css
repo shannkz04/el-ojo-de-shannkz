@@ -237,15 +237,26 @@ footer {
 
 #share-menu li a {
     text-decoration: none;
-    color: white;
+    color: black;
     display: block;
     padding: 10px;
     transition: 0.3s;
-    background-color: transparent; /* Añadido */
 }
 
 #share-menu li a:hover {
     background: #ddd;
+}
+#share-menu ul li a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+#share-menu ul li a:hover {
+    opacity: 0.8;
 }
 
 /* Colores para cada red social dentro del menú */
