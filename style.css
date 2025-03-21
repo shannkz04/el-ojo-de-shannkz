@@ -1,99 +1,59 @@
-/* Estilo para el menú de compartir */
-#share-menu {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-    padding: 10px;
-    z-index: 100;
-}
-
-#share-menu ul {
-    list-style: none;
+* {
     margin: 0;
     padding: 0;
-}
-
-#share-menu li {
-    margin: 10px 0;
-}
-
-#share-menu a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-    display: block;
-    padding: 5px 10px;
-    border-radius: 4px;
-    transition: background-color 0.3s ease;
-}
-
-#share-menu a:hover {
-    background-color: #f1f1f1;
-}
-
-#share-button {
-    cursor: pointer;
-    font-weight: bold;
-    padding: 10px;
-    background-color: #3498db;
-    color: white;
-    border-radius: 5px;
-    border: none;
-    transition: background-color 0.3s ease;
-}
-
-#share-button:hover {
-    background-color: #2980b9;
-}
-
-/* Asegurarse de que el resto de la página no se vea afectada */
-body {
+    box-sizing: border-box;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
 }
 
-header {
-    background-color: #3498db;
-    padding: 20px;
-    color: white;
+body {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.banner {
+    background: url('prueba.png') no-repeat center center/cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
+}
+
+.banner h1 {
+    background: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 2em;
+}
+
+nav {
+    background: #222;
+    padding: 10px 0;
 }
 
 nav ul {
+    display: flex;
+    justify-content: center;
     list-style: none;
-    padding: 0;
-    text-align: center;
 }
 
-nav li {
-    display: inline;
+nav ul li {
     margin: 0 15px;
 }
 
-nav a {
+nav ul li a {
     text-decoration: none;
     color: white;
-    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: 0.3s;
 }
 
-.content, .descargas, .social {
-    padding: 20px;
+nav ul li a:hover {
+    background: #444;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
 /* Estilos del menú desplegable */
 nav ul li.dropdown {
     position: relative;
@@ -131,6 +91,118 @@ nav ul li.dropdown ul li a {
 nav ul li.dropdown ul li a:hover {
     background: #444;
 }
+
+.content {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+h2, h3 {
+    text-align: center; /* Centra los títulos */
+}
+
+.social {
+    text-align: center;
+    padding: 20px;
+    background: #ddd;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.icon {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.twitter {
+    background: #1DA1F2;
+}
+
+.youtube {
+    background: #FF0000;
+}
+
+.secondary-channel {
+    background: #FF4500;
+}
+
+.instagram {
+    background: #C13584;
+}
+
+.icon:hover {
+    opacity: 0.8;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Sección de Descargas */
+.descargas {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.descargas h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.descarga-item {
+    margin-bottom: 30px;
+}
+
+.descarga-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.descargar {
+    background-color: #28a745;
+    color: white;
+}
+
+.boton:hover {
+    opacity: 0.8;
+}
+
+
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
