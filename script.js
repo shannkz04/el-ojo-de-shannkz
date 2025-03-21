@@ -4,16 +4,19 @@ document.addEventListener("DOMContentLoaded", function() {
     const shareButton = document.getElementById("share-button");
     const shareMenu = document.getElementById("share-menu");
 
-    // Mostrar u ocultar el menú cuando se haga clic en el botón de compartir
+    // Asegurar que el menú esté oculto al inicio
+    shareMenu.classList.add("hidden");
+
+    // Mostrar u ocultar el menú al hacer clic en el botón de compartir
     shareButton.addEventListener("click", function (event) {
         event.preventDefault();
-        shareMenu.style.display = (shareMenu.style.display === "block") ? "none" : "block";
+        shareMenu.classList.toggle("hidden");
     });
 
-    // Ocultar el menú si se hace clic fuera de él
+    // Cerrar el menú si se hace clic fuera de él
     document.addEventListener("click", function (event) {
         if (!shareButton.contains(event.target) && !shareMenu.contains(event.target)) {
-            shareMenu.style.display = "none";
+            shareMenu.classList.add("hidden");
         }
     });
 });
