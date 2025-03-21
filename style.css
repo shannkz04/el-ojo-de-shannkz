@@ -246,3 +246,32 @@ footer {
 #share-menu li a:hover {
     background: #ddd;
 }
+#share-menu ul li a {
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+#share-menu ul li a:hover {
+    opacity: 0.8;
+}
+
+/* Colores para cada red social dentro del menú */
+#facebook-share {
+    background-color: #3b5998; /* Azul de Facebook */
+}
+
+#twitter-share {
+    background-color: #1DA1F2; /* Azul de Twitter */
+}
+
+#whatsapp-share {
+    background-color: #25D366; /* Verde de WhatsApp */
+}
+
+#copy-link {
+    background-color: #4CAF50; /* Verde para copiar enlace */
+}
