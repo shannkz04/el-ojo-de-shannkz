@@ -40,6 +40,7 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
+    position: relative;
 }
 
 nav ul li a {
@@ -55,10 +56,6 @@ nav ul li a:hover {
 }
 
 /* Estilos del menú desplegable */
-nav ul li.dropdown {
-    position: relative;
-}
-
 nav ul li.dropdown ul {
     display: none;
     position: absolute;
@@ -200,8 +197,6 @@ footer {
 .boton:hover {
     opacity: 0.8;
 }
-
-
 
 @keyframes fadeIn {
     from { opacity: 0; }
