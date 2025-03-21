@@ -94,6 +94,43 @@ footer {
     width: 100%;
     bottom: 0;
 }
+/* Estilos del menú desplegable */
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li.dropdown ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #222;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    min-width: 160px;
+    border-radius: 5px;
+}
+
+nav ul li.dropdown:hover ul {
+    display: block;
+}
+
+nav ul li.dropdown ul li {
+    width: 100%;
+}
+
+nav ul li.dropdown ul li a {
+    padding: 10px 15px;
+    display: block;
+    color: white;
+    background: #333;
+    text-decoration: none;
+}
+
+nav ul li.dropdown ul li a:hover {
+    background: #444;
+}
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
