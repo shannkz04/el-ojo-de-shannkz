@@ -1,11 +1,11 @@
-          document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function() {
     alert("¡Bienvenido a Kusomagi! Únete a la aventura.");
 
     document.getElementById('share-button').addEventListener('click', function(e) {
         e.preventDefault();
 
         // URL de la página que se quiere compartir
-        const url = https://shannkz04.github.io/el-ojo-de-shannkz
+        const url = "https://shannkz04.github.io/el-ojo-de-shannkz";
 
         // Redes sociales a compartir
         const shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`; // Facebook
