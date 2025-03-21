@@ -9,7 +9,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const image = "https://shannkz04.github.io/el-ojo-de-shannkz/prueba.png"; // Imagen para compartir
 
     // Alternar visibilidad del menú de compartir
-    shareButton.addEventListener("click", function() {
+    shareButton.addEventListener("click", function(event) {
+        // Prevenir que el clic en el botón de compartir cierre el menú inmediatamente
+        event.stopPropagation();
+
         if (shareMenu.style.display === "block") {
             shareMenu.style.display = "none"; // Cierra el menú si está abierto
         } else {
@@ -34,5 +37,12 @@ document.addEventListener("DOMContentLoaded", function() {
         navigator.clipboard.writeText(url).then(() => {
             alert("Enlace copiado al portapapeles!");
         });
+    });
+
+    // Cerrar el menú si se hace clic fuera de él
+    document.addEventListener("click", function(event) {
+        if (!shareButton.contains(event.target) && !shareMenu.contains(event.target)) {
+            shareMenu.style.display = "none"; // Cierra el menú si se hace clic fuera de él
+        }
     });
 });
