@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     alert("¡Bienvenido a Kusomagi! Únete a la aventura.");
-    
+   
     const shareButton = document.getElementById("share-button");
     const shareMenu = document.getElementById("share-menu");
 
