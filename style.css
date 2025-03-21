@@ -54,13 +54,94 @@ nav ul li a:hover {
     background: #444;
 }
 
-.content {
+.content, .proyecto, .contacto {
     text-align: center;
     padding: 40px 20px;
 }
 
-h2, h3 {
-    text-align: center; /* Centra los títulos */
+.proyecto h2, .contacto h2 {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.proyecto p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.descargas {
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.descargas h2 {
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.descarga-item {
+    margin-bottom: 30px;
+}
+
+.descarga-item h3 {
+    font-size: 1.8em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.boton {
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.descargar {
+    background-color: #28a745;
+    color: white;
+}
+
+.boton:hover {
+    opacity: 0.8;
+}
+
+.radio {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #fff;
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.radio-player {
+    margin-bottom: 20px;
+}
+
+.radio-imagenes {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.radio-imagenes img {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
 }
 
 .social {
@@ -113,104 +194,16 @@ footer {
     margin-top: 20px;
 }
 
-/* Sección de Descargas */
-.descargas {
-    padding: 40px 20px;
-    background-color: #fff;
-    margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: center;
-}
+@media screen and (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.5em;
+    }
 
-.descargas h2 {
-    color: #333;
-    font-size: 2em;
-    margin-bottom: 20px;
-}
+    .descargas h2, .social h3 {
+        font-size: 1.5em;
+    }
 
-.descarga-item {
-    margin-bottom: 30px;
-}
-
-.descarga-item h3 {
-    font-size: 1.8em;
-    color: #333;
-    margin-bottom: 10px;
-}
-
-.botones {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-}
-
-.boton {
-    text-decoration: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: 0.3s;
-    display: inline-block;
-}
-
-.descargar {
-    background-color: #28a745;
-    color: white;
-}
-
-.boton:hover {
-    opacity: 0.8;
-}
-
-/* Estilo para la sección de Radio (Diseño Otaku) */
-.radio {
-    background: #2e3a8c;
-    padding: 40px 20px;
-    text-align: center;
-    color: white;
-    border-radius: 10px;
-    margin-top: 20px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-}
-
-.radio h3 {
-    font-size: 2.5em;
-    margin-bottom: 15px;
-    color: #ffd700;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
-}
-
-.radio-player {
-    margin: 20px auto;
-    width: 80%;
-    max-width: 600px;
-    border-radius: 8px;
-    background: #1f2640;
-    padding: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
-}
-
-.radio-player iframe {
-    border-radius: 8px;
-}
-
-.radio-info {
-    margin-top: 15px;
-    font-size: 1.2em;
-    color: #ffd700;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
-}
-
-.radio-info p {
-    font-family: "Anime Ace", sans-serif;
-    color: #fff;
-    font-size: 1.1em;
-    margin-top: 10px;
-    animation: fadeIn 2s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    .descarga-item h3 {
+        font-size: 1.5em;
+    }
 }
