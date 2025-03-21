@@ -163,4 +163,26 @@ footer {
     opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 1.5em; /* Reducir tamaño de fuente */
+    }
 
+    .descargas h2 {
+        font-size: 1.6em; /* Ajustar tamaño de fuente en móvil */
+    }
+
+    iframe {
+        width: 100%; /* Asegura que el iframe sea responsivo */
+        height: 400px; /* Ajustar altura del iframe */
+    }
+
+    .social-icons {
+        flex-direction: column; /* Mostrar íconos de redes en columna */
+    }
+
+    .social-icons a {
+        padding: 12px 15px;
+        font-size: 1.2em; /* Aumentar tamaño de los iconos para facilitar clics */
+    }
+}
