@@ -7,140 +7,47 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
     <header>
         <div class="banner">
-            <img src="prueba.png" alt="Banner de El Ojo de Shannkz">
+            <h1>El Ojo de Shannkz</h1>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#libro">Nuestro Libro</a></li>
-                <li><a href="#descargas">Descargas</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-                <li><a href="#radio">Radio Online</a></li>
-            </ul>
-        </nav>
     </header>
-    
-    <section id="libro">
-        <h2>Nuestro Libro</h2>
-        <p>Aquí compartiremos avances, capítulos y más sobre nuestra historia.</p>
-    </section>
-    
-    <section id="descargas">
-        <h2>Descargas</h2>
-        <p>Aquí puedes descargar contenido relacionado con nuestros proyectos:</p>
+
+    <nav>
         <ul>
-            <li><a href="archivos/capitulo1.pdf" download>Descargar Capítulo 1</a></li>
-            <li><a href="archivos/ilustraciones.zip" download>Descargar Ilustraciones</a></li>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Proyecto</a></li>
+            <li><a href="#">Descargas</a></li>
+            <li><a href="#">Contacto</a></li>
         </ul>
+    </nav>
+
+    <section class="content">
+        <h2>Bienvenidos a nuestra historia</h2>
+        <p>Explora nuestro proyecto y sumérgete en un mundo lleno de aventuras.</p>
     </section>
-    
-    <section id="contacto">
-        <h2>Contacto</h2>
-        <p>Si deseas comunicarte con nosotros, síguenos en nuestras redes sociales.</p>
-        <div class="redes-sociales">
-            <a href="https://x.com/Shannkz_04" target="_blank">Twitter</a>
-            <a href="https://www.instagram.com/shannkz04/" target="_blank">Instagram</a>
-            <a href="https://www.youtube.com/@shannkz04" target="_blank">Youtube</a>
-            <a href="https://www.youtube.com/@ElOjodeShannkz" target="_blank">Canal secundario</a>
+
+    <section class="social">
+        <h3>¡Síguenos en nuestras redes!</h3>
+        <div class="social-icons">
+            <a href="https://twitter.com/" target="_blank" class="icon twitter">Twitter</a>
+            <a href="https://facebook.com/" target="_blank" class="icon facebook">Facebook</a>
+            <a href="https://instagram.com/" target="_blank" class="icon instagram">Instagram</a>
         </div>
     </section>
-    
-    <section id="radio">
-        <h2>Radio Online</h2>
-        <p>Escucha nuestra radio en vivo.</p>
+
+    <section class="radio">
+        <h3>📻 Escucha nuestra radio en vivo</h3>
         <audio controls>
-            <source src="https://tu-radio-stream.com/stream.mp3" type="audio/mpeg">
-            Tu navegador no soporta la reproducción de audio.
+            <source src="https://stream.zeno.fm/your-radio-link.mp3" type="audio/mpeg">
+            Tu navegador no soporta el reproductor de audio.
         </audio>
     </section>
-    
-    <footer>
-        <p>&copy; 2025 El Ojo de Shannkz</p>
-    </footer>
-    
-    <style>
-        :root {
-            --color-primario: #ffb74d; /* Naranja mango */
-            --color-secundario: #ffcc80; /* Amarillo suave */
-            --color-terciario: #4caf50; /* Verde mango */
-            --color-fondo: #1e1e1e; /* Fondo oscuro */
-            --color-texto: #f5f5f5; /* Texto claro */
-            --color-botones: #ff8a65; /* Rojo suave */
-        }
 
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: var(--color-fondo);
-            color: var(--color-texto);
-        }
-        header {
-            background: var(--color-primario);
-            text-align: center;
-        }
-        .banner {
-            width: 100%;
-            height: 250px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            overflow: hidden;
-        }
-        .banner img {
-            width: 100%;
-            height: auto;
-            object-fit: cover;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            background: var(--color-secundario);
-            padding: 10px 0;
-        }
-        nav ul li {
-            margin: 0 15px;
-        }
-        nav ul li a {
-            color: var(--color-fondo);
-            text-decoration: none;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-            background: rgba(255, 255, 255, 0.1);
-            margin: 20px;
-            border-radius: 10px;
-            box-shadow: 0px 0px 10px rgba(255, 165, 0, 0.3);
-        }
-        .redes-sociales {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-        }
-        .btn-social {
-            display: inline-block;
-            padding: 10px 20px;
-            border-radius: 5px;
-            text-decoration: none;
-            color: white;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        .btn-social:nth-child(1) { background: var(--color-terciario); }
-        .btn-social:nth-child(2) { background: var(--color-primario); }
-        .btn-social:nth-child(3) { background: var(--color-botones); }
-        .btn-social:hover { filter: brightness(1.2); }
-        
-        footer {
-            text-align: center;
-            padding: 10px;
-            background: var(--color-fondo);
-            color: white;
-        }
-    </style>
+    <footer>
+        <p>&copy; 2025 El Ojo de Shannkz. Todos los derechos reservados.</p>
+    </footer>
+
 </body>
 </html>
