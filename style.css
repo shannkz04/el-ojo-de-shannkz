@@ -108,6 +108,7 @@ footer {
     padding: 10px 0;
     margin-top: 20px;
 }
+
 /* Sección de Descargas */
 .descargas {
     padding: 40px 20px;
@@ -163,26 +164,54 @@ footer {
     opacity: 0.8;
 }
 
-@media (max-width: 768px) {
-    .banner h1 {
-        font-size: 1.5em; /* Reducir tamaño de fuente */
-    }
+/* Estilo para la sección de Radio (Diseño Otaku) */
+.radio {
+    background: #2e3a8c;
+    padding: 40px 20px;
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
 
-    .descargas h2 {
-        font-size: 1.6em; /* Ajustar tamaño de fuente en móvil */
-    }
+.radio h3 {
+    font-size: 2.5em;
+    margin-bottom: 15px;
+    color: #ffd700;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
 
-    iframe {
-        width: 100%; /* Asegura que el iframe sea responsivo */
-        height: 400px; /* Ajustar altura del iframe */
-    }
+.radio-player {
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 8px;
+    background: #1f2640;
+    padding: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
 
-    .social-icons {
-        flex-direction: column; /* Mostrar íconos de redes en columna */
-    }
+.radio-player iframe {
+    border-radius: 8px;
+}
 
-    .social-icons a {
-        padding: 12px 15px;
-        font-size: 1.2em; /* Aumentar tamaño de los iconos para facilitar clics */
-    }
+.radio-info {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #ffd700;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+.radio-info p {
+    font-family: "Anime Ace", sans-serif;
+    color: #fff;
+    font-size: 1.1em;
+    margin-top: 10px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
