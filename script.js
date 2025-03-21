@@ -5,13 +5,27 @@ document.addEventListener("DOMContentLoaded", function() {
     const messagesContainer = document.getElementById("messages");
     const messageInput = document.getElementById("messageInput");
     const sendMessageButton = document.getElementById("sendMessage");
+    const chatAlert = document.getElementById("chatAlert");
+
+    // Verificar si el usuario está registrado
+    const username = localStorage.getItem("username");
+
+    if (username) {
+        document.getElementById("chatBox").classList.remove("disabled");
+        messageInput.disabled = false;
+        sendMessageButton.disabled = false;
+        chatAlert.textContent = "";
+    } else {
+        document.getElementById("chatBox").classList.add("disabled");
+        chatAlert.textContent = "Debes registrarte para participar en el chat.";
+    }
 
     sendMessageButton.addEventListener("click", function() {
         const messageText = messageInput.value.trim();
 
         if (messageText !== "") {
             const messageElement = document.createElement("div");
-            messageElement.textContent = `Jugador: ${messageText}`;
+            messageElement.textContent = `${username}: ${messageText}`;
             messagesContainer.appendChild(messageElement);
 
             // Limpiar el campo de texto
@@ -35,16 +49,21 @@ document.addEventListener("DOMContentLoaded", function() {
         const password = document.getElementById("password").value;
 
         if (username && email && password) {
-            // Guardar usuario (aquí solo simula un registro)
+            // Guardar usuario
             localStorage.setItem("username", username);
             localStorage.setItem("email", email);
 
             messageRegister.textContent = `¡Registro exitoso, ${username}! Ahora puedes interactuar en la comunidad.`;
             messageRegister.style.color = "#28a745";
+
+            // Actualizar el chat
+            document.getElementById("chatBox").classList.remove("disabled");
+            messageInput.disabled = false;
+            sendMessageButton.disabled = false;
+            chatAlert.textContent = "";
         } else {
             messageRegister.textContent = "Por favor, complete todos los campos.";
             messageRegister.style.color = "#dc3545";
         }
     });
 });
-
