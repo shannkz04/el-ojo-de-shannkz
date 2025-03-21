@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const shareButton = document.getElementById("share-button");
     const shareMenu = document.getElementById("share-menu");
     const body = document.body;
-
     // URL de la página que se quiere compartir
     const url = "https://shannkz04.github.io/el-ojo-de-shannkz";
     const image = "https://shannkz04.github.io/el-ojo-de-shannkz/prueba.png"; // Imagen para compartir
