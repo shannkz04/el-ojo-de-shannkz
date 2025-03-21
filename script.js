@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+    // Mostrar un mensaje de bienvenida
     alert("¡Bienvenido a Kusomagi! Únete a la aventura.");
-    
+
     const shareButton = document.getElementById("share-button");
     const shareMenu = document.getElementById("share-menu");
     const body = document.body;
@@ -9,9 +10,10 @@ document.addEventListener("DOMContentLoaded", function() {
     const url = "https://shannkz04.github.io/el-ojo-de-shannkz";
     const image = "https://shannkz04.github.io/el-ojo-de-shannkz/prueba.png"; // Imagen para compartir
 
+    // Mostrar u ocultar el menú de compartir al hacer clic en el botón
     shareButton.addEventListener("click", function(event) {
-        event.stopPropagation();  // Evita que el evento se propague y cierre el menú al hacer clic en el botón
-        shareMenu.style.display = (shareMenu.style.display === "block") ? "none" : "block";  // Alterna la visibilidad del menú
+        event.stopPropagation();  // Evita que el clic cierre el menú
+        shareMenu.style.display = (shareMenu.style.display === "block") ? "none" : "block";
     });
 
     // Funciones para compartir en redes sociales
@@ -40,6 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Evitar que el clic en el menú de compartir cierre el menú
     shareMenu.addEventListener("click", function(event) {
-        event.stopPropagation();  // Evita que el clic cierre el menú cuando se hace en el mismo
+        event.stopPropagation();
     });
 });
