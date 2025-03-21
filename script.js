@@ -8,8 +8,13 @@ document.addEventListener("DOMContentLoaded", function() {
     const url = "https://shannkz04.github.io/el-ojo-de-shannkz";
     const image = "https://shannkz04.github.io/el-ojo-de-shannkz/prueba.png"; // Imagen para compartir
 
+    // Alternar visibilidad del menú de compartir
     shareButton.addEventListener("click", function() {
-        shareMenu.style.display = "block";  // Muestra el menú de compartir
+        if (shareMenu.style.display === "block") {
+            shareMenu.style.display = "none"; // Cierra el menú si está abierto
+        } else {
+            shareMenu.style.display = "block";  // Muestra el menú si está cerrado
+        }
     });
 
     // Funciones para compartir en redes sociales
