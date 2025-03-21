@@ -9,7 +9,7 @@ function mostrarPDF() {
     if (!document.getElementById('visor-pdf')) {
         let iframe = document.createElement('iframe');
         iframe.id = 'visor-pdf';
-        iframe.src = "https://docs.google.com/gview?url=https://raw.githubusercontent.com/shannkz04/el-ojo-de-shannkz/994fec971b406157c7bc21a8b3a1ee42d22f801a/KusoMagi%20TOMO%201.pdf&embedded=true";
+        iframe.src = "https://docs.google.com/gview?url=https://raw.githubusercontent.com/shannkz04/el-ojo-de-shannkz/KusoMagi TOMO 1.pdf";
         iframe.style.width = "100%";
         iframe.style.height = "600px";
         iframe.style.border = "none";
