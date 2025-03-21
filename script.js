@@ -10,10 +10,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Alternar visibilidad del menú de compartir
     shareButton.addEventListener("click", function(event) {
-        // Prevenir que el clic en el botón de compartir cierre el menú inmediatamente
-        event.stopPropagation();
-
-        // Si el menú está visible, lo ocultamos, si está oculto lo mostramos
+        event.stopPropagation();  // Prevenir que el clic en el botón cierre el menú al mismo tiempo
+        
+        // Verificar el estado del menú para abrir o cerrar
         if (shareMenu.style.display === "block") {
             shareMenu.style.display = "none"; // Cierra el menú si está abierto
         } else {
