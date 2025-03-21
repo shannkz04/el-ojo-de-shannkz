@@ -204,13 +204,37 @@ footer {
     .descarga-item {
         padding: 10px;
     }
+
+    #share-menu {
+        top: 20px;  /* Ajuste el menú para que no quede fuera de pantalla */
+        left: 50%;
+        transform: translateX(-50%); /* Asegura que se quede centrado */
+        z-index: 1000;
+        display: none; /* Oculto por defecto */
+    }
+
+    #share-menu.active {
+        display: block;
+    }
+
+    #share-menu li {
+        padding: 8px;
+    }
+
+    #share-menu li a {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    #share-menu {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
 }
 
 /* --- MENÚ COMPARTIR (MEJORADO) --- */
 
 /* Ocultar el menú de compartir por defecto */
 #share-menu {
-    display: none;
     position: absolute;
     background: white;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -246,6 +270,7 @@ footer {
 #share-menu li a:hover {
     background: #ddd;
 }
+
 #share-menu ul li a {
     display: block;
     padding: 10px;
