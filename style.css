@@ -40,7 +40,6 @@ nav ul {
 
 nav ul li {
     margin: 0 15px;
-    position: relative;
 }
 
 nav ul li a {
@@ -55,47 +54,13 @@ nav ul li a:hover {
     background: #444;
 }
 
-/* Estilo para el menú desplegable */
-nav ul li.dropdown ul {
-    display: none;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background: #222;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    min-width: 160px;
-    border-radius: 5px;
-}
-
-nav ul li.dropdown:hover ul {
-    display: block;
-}
-
-nav ul li.dropdown ul li {
-    width: 100%;
-}
-
-nav ul li.dropdown ul li a {
-    padding: 10px 15px;
-    display: block;
-    color: white;
-    background: #333;
-    text-decoration: none;
-}
-
-nav ul li.dropdown ul li a:hover {
-    background: #444;
-}
-
 .content {
     text-align: center;
     padding: 40px 20px;
 }
 
 h2, h3 {
-    text-align: center;
+    text-align: center; /* Centra los títulos */
 }
 
 .social {
@@ -197,6 +162,8 @@ footer {
 .boton:hover {
     opacity: 0.8;
 }
+
+
 
 @keyframes fadeIn {
     from { opacity: 0; }
