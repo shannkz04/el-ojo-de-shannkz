@@ -1,45 +1,31 @@
 document.addEventListener("DOMContentLoaded", function() {
-    const shareButton = document.getElementById('share-button');
-    const shareMenu = document.getElementById('share-menu');
-    const url = 'https://shannkz04.github.io/el-ojo-de-shannkz'; // La URL que deseas compartir
+    const shareButton = document.getElementById("share-button");
+    const shareMenu = document.getElementById("share-menu");
 
-    // Mostrar el menú de compartir
-    shareButton.addEventListener('click', function() {
-        shareMenu.style.display = 'block'; // Mostrar el menú
+    // URL de la página que se quiere compartir
+    const url = "https://shannkz04.github.io/el-ojo-de-shannkz";
+    const image = "https://shannkz04.github.io/el-ojo-de-shannkz/prueba.png"; // Imagen para compartir
+
+    shareButton.addEventListener("click", function() {
+        shareMenu.style.display = "block";  // Muestra el menú de compartir
     });
 
-    // Función para compartir en Facebook
-    document.getElementById('facebook-share').addEventListener('click', function(e) {
-        e.preventDefault();
-        const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`;
-        window.open(facebookUrl, 'facebook-share', 'width=600,height=400,scrollbars=yes,resizable=yes');
-        shareMenu.style.display = 'none'; // Cerrar el menú
+    // Funciones para compartir en redes sociales
+    document.getElementById("facebook-share").addEventListener("click", function() {
+        window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`, '_blank', 'width=600,height=400');
     });
 
-    // Función para compartir en Twitter
-    document.getElementById('twitter-share').addEventListener('click', function(e) {
-        e.preventDefault();
-        const twitterUrl = `https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}`;
-        window.open(twitterUrl, 'twitter-share', 'width=600,height=400,scrollbars=yes,resizable=yes');
-        shareMenu.style.display = 'none'; // Cerrar el menú
+    document.getElementById("twitter-share").addEventListener("click", function() {
+        window.open(`https://twitter.com/intent/tweet?url=${encodeURIComponent(url)}&text=¡Descubre El Ojo de Shannkz!`, '_blank', 'width=600,height=400');
     });
 
-    // Función para compartir en WhatsApp
-    document.getElementById('whatsapp-share').addEventListener('click', function(e) {
-        e.preventDefault();
-        const whatsappUrl = `https://wa.me/?text=${encodeURIComponent(url)}`;
-        window.open(whatsappUrl, 'whatsapp-share', 'width=600,height=400,scrollbars=yes,resizable=yes');
-        shareMenu.style.display = 'none'; // Cerrar el menú
+    document.getElementById("whatsapp-share").addEventListener("click", function() {
+        window.open(`https://wa.me/?text=${encodeURIComponent(url)}`, '_blank', 'width=600,height=400');
     });
 
-    // Función para copiar el enlace al portapapeles
-    document.getElementById('copy-link').addEventListener('click', function(e) {
-        e.preventDefault();
-        navigator.clipboard.writeText(url).then(function() {
-            alert('Enlace copiado al portapapeles');
-        }, function(err) {
-            console.error('Error al copiar al portapapeles: ', err);
+    document.getElementById("copy-link").addEventListener("click", function() {
+        navigator.clipboard.writeText(url).then(() => {
+            alert("Enlace copiado al portapapeles!");
         });
-        shareMenu.style.display = 'none'; // Cerrar el menú
     });
 });
