@@ -97,19 +97,6 @@ nav ul li a:hover {
     opacity: 0.8;
 }
 
-.radio {
-    text-align: center;
-    padding: 20px;
-    background: #eee;
-    margin-top: 20px;
-}
-
-.radio audio {
-    margin-top: 10px;
-    width: 100%;
-    max-width: 300px;
-}
-
 footer {
     background: #222;
     color: white;
