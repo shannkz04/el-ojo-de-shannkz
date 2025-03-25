@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Botón de donación
     const donacionButton = document.createElement("a");
-    donacionButton.href = "https://www.paypal.me/TUENLACE";
+    donacionButton.href = "https://www.paypal.com/paypalme/yoshinnkz";
     donacionButton.innerText = "Donar";
     donacionButton.target = "_blank";
     donacionButton.style.position = "fixed";
