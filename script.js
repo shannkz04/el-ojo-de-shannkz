@@ -63,21 +63,3 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
-    // Botón de donación
-    const donacionButton = document.createElement("a");
-    donacionButton.href = "https://www.paypal.com/paypalme/yoshinnkz";
-    donacionButton.innerText = "Donar";
-    donacionButton.target = "_blank";
-    donacionButton.style.position = "fixed";
-    donacionButton.style.bottom = "20px";
-    donacionButton.style.right = "20px";
-    donacionButton.style.background = "#0070ba";
-    donacionButton.style.color = "#fff";
-    donacionButton.style.padding = "10px 15px";
-    donacionButton.style.borderRadius = "5px";
-    donacionButton.style.textDecoration = "none";
-    donacionButton.style.fontSize = "14px";
-    donacionButton.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
-    
-    document.body.appendChild(donacionButton);
-});
