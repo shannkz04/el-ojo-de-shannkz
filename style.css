@@ -300,3 +300,20 @@ footer {
 #copy-link {
     background-color: #4CAF50; /* Verde para copiar enlace */
 }
+
+.donate-btn {
+    display: inline-block;
+    background-color: #FFD700; /* Dorado, pero puedes cambiarlo */
+    color: #333;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    text-decoration: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+.donate-btn:hover {
+    background-color: #FFC107;
+    color: white;
+}
