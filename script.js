@@ -47,19 +47,3 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
-document.addEventListener("DOMContentLoaded", function () {
-    // Contador de visitas
-    fetch("contador_visitas.php")
-        .then(response => response.text())
-        .then(data => console.log("Visitas registradas:", data));
-
-    // Contador de descargas
-    const downloadButton = document.getElementById("descargar");
-    if (downloadButton) {
-        downloadButton.addEventListener("click", function () {
-            fetch("contador_descargas.php")
-                .then(response => response.text())
-                .then(data => console.log("Descargas registradas:", data));
-        });
-    }
-
