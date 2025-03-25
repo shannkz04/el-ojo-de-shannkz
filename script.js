@@ -47,3 +47,37 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    // Contador de visitas
+    fetch("contador_visitas.php")
+        .then(response => response.text())
+        .then(data => console.log("Visitas registradas:", data));
+
+    // Contador de descargas
+    const downloadButton = document.getElementById("descargar");
+    if (downloadButton) {
+        downloadButton.addEventListener("click", function () {
+            fetch("contador_descargas.php")
+                .then(response => response.text())
+                .then(data => console.log("Descargas registradas:", data));
+        });
+    }
+
+    // Botón de donación
+    const donacionButton = document.createElement("a");
+    donacionButton.href = "https://www.paypal.me/TUENLACE";
+    donacionButton.innerText = "Donar";
+    donacionButton.target = "_blank";
+    donacionButton.style.position = "fixed";
+    donacionButton.style.bottom = "20px";
+    donacionButton.style.right = "20px";
+    donacionButton.style.background = "#0070ba";
+    donacionButton.style.color = "#fff";
+    donacionButton.style.padding = "10px 15px";
+    donacionButton.style.borderRadius = "5px";
+    donacionButton.style.textDecoration = "none";
+    donacionButton.style.fontSize = "14px";
+    donacionButton.style.boxShadow = "0 4px 6px rgba(0, 0, 0, 0.1)";
+    
+    document.body.appendChild(donacionButton);
+});
